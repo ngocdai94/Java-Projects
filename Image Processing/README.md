@@ -1,2 +1,2 @@
 # Image-Processing
-Java Project 
+•	An image processing program that can work similar to Adobe Photoshop Lightroom program.
