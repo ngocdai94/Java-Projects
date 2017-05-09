@@ -1,0 +1,36 @@
+// Write your short report here (-2 if there is no report)
+// Besides those requirements filter. I added 3 more filters which are 
+// Black and White, Emboss and Motion Blur filters (A a little bit different from Gaussian Filter
+//													using 5x5 matrix).
+
+/**
+ * A class to configure the SnapShop application
+ * 
+ * @author Dai Nguyen
+ * @version (ver 1.0; 03/13/15)
+ */
+public class SnapShopConfiguration {
+	/**
+	 * Method to configure the SnapShop. Call methods like addFilter and
+	 * setDefaultFilename here.
+	 * 
+	 * @param theShop
+	 *            A pointer to the application
+	 */
+	public static void configure(SnapShop theShop) {
+
+		theShop.setDefaultFilename("1.jpg");
+		theShop.addFilter(new FlipHorizontalFilter(), "Flip Horizontal");
+		theShop.addFilter(new FlipVerticalFilter(), "Flip Vertical");
+		theShop.addFilter(new NegativeFilter(), "Negative");
+		theShop.addFilter(new GaussianFilter(), "Gaussian Blur");
+		theShop.addFilter(new LaplacianFilter(), "Laplacian");
+		theShop.addFilter(new UnsharpMaskingFilter(), "Unsharp Masking");
+		theShop.addFilter(new EdgyFilter(), "Edgy");
+		theShop.addFilter(new EmbossFilter(), "Emboss");
+		theShop.addFilter(new BlackandWhiteFilter(), "Black & White");
+		theShop.addFilter(new MotionBlurFilter(), "Motion Filter");
+
+		// add your other filters below
+	}
+}
